@@ -4,7 +4,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket  = "ecs-terraform-bucker0001" # create s3 bucket to store statefile
+    bucket  = "ecs-terraform-bucker000125457222363 " # create s3 bucket to store statefile
     key     = "dev/terraform.tfstate"
     region  = "us-east-1"
     encrypt = false
@@ -48,3 +48,4 @@ module "ecs" {
   alb_listener_arn    = module.alb.listener_arn
 
 }
+
